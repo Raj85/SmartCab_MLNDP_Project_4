@@ -13672,10 +13672,9 @@ klphMCVJkiRJkqRWGExJkiRJkiSpFQZTkiRJkiRJasX/A2xEo4XwWHIsAAAAAElFTkSuQmCC
 <li>waypoint has 3 outcomes</li>
 <li>lights has 2 outcomes</li>
 <li>left has 4</li>
-<li>right has 4</li>
 <li>oncoming has 4 </li>
 </ul>
-<p>So the combinations of the above out somes would be 4<em>2</em>4<em>4</em>4 = 384 possible combinations of states</p>
+<p>So the combinations of the above out somes would be 4x2x4x4 = 128 possible combinations of states</p>
 
 </div>
 </div>
@@ -19207,7 +19206,18 @@ XjNeFsEVrwAAAABJRU5ErkJggg==
 
 </code></pre>
 <p>This is another good example of opitmal poilcy where we want to go left and the signal is green and the oncoming traffic is going right and there are no vehical next.</p>
-<p>I couldn't find a sub optimal state and action combination in my output file.</p>
+<p><strong><em>Sub Optimal Policy</em></strong></p>
+<p>Finally, after 2 submissions and reviews, I found a sub optimal policy</p>
+<ul>
+<li>('right', 'red', 'forward', None)<ul>
+<li>forward : -10.29</li>
+<li>None : 1.73</li>
+<li>right : 1.49</li>
+<li>left : -11.34</li>
+</ul>
+</li>
+</ul>
+<p>In this policy agents waypoint is right and the signal is red and the oncoming vehical is going straight and there are no vehicals in the left. But the poilcy dictates the agent to stay put where as the agent had the oppourtunity to take a right. Thats the reason this is a sub-opitmal policy.</p>
 
 </div>
 </div>
